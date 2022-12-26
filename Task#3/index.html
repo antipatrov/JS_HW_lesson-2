@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число (в первую, вторую или третью).
+    </h3>
+    <script>
+        let day = prompt('Please enter date');
+        document.writeln(day + "  число месяца.   ");
+        let decade = Math.floor(day / 10) + 1;
+        console.log(decade);
+        document.writeln("Это " + decade + " декада месяца");
+    </script>
+</body>
+
+</html>
